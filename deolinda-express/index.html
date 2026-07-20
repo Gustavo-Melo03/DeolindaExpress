@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeOlinda Express — Transporte de cargas para todo o Brasil</title>
+<meta name="description" content="DeOlinda Express: transporte de cargas pequenas e médias para todo o território nacional. Serviços urgentes, programados, transporte dedicado e atendimento personalizado.">
+
+<meta name="theme-color" content="#001121">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<meta property="og:title" content="DeOlinda Express — Transporte de cargas para todo o Brasil">
+<meta property="og:description" content="Transporte de cargas pequenas e médias para todo o território nacional. Serviços urgentes, programados, transporte dedicado e atendimento personalizado.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+<!-- Design tokens first, then base, then layout/components, then section modules, then widgets -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/buttons.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/pillars.css">
+<link rel="stylesheet" href="css/services.css">
+<link rel="stylesheet" href="css/how-it-works.css">
+<link rel="stylesheet" href="css/differentials.css">
+<link rel="stylesheet" href="css/modes.css">
+<link rel="stylesheet" href="css/coverage.css">
+<link rel="stylesheet" href="css/cta.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/widgets.css">
+</head>
+<body>
+
+<div class="progress-rail"><div class="progress-fill" id="progressFill"></div></div>
+<div class="progress-truck" id="progressTruck">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M2 6h11v9H2V6z" fill="#F2860F"/><path d="M13 10h4l3 3v2h-7v-5z" fill="#0C1B2A"/><circle cx="6" cy="17" r="1.6" fill="#0C1B2A"/><circle cx="16.5" cy="17" r="1.6" fill="#0C1B2A"/></svg>
+</div>
+
+<header>
+  <nav class="wrap">
+    <a href="#top" class="logo">
+      <img src="assets/logo-header.png" alt="DeOlinda Express" width="200" height="96">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn-primary nav-cta" href="https://wa.me/5511982871696?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20frete." target="_blank" rel="noopener">Solicitar orçamento</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Transporte de cargas · todo o Brasil</span>
+        <h1>Toda entrega<br>começa com <em>uma rota bem traçada.</em></h1>
+        <p class="lede">A DeOlinda Express leva cargas pequenas e médias a qualquer ponto do território nacional, com a segurança e a agilidade de quem trata cada frete como prioridade — em serviços avulsos ou contratos mensais.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/5511982871696?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20frete." target="_blank" rel="noopener">Solicitar orçamento</a>
+          <a class="btn btn-ghost-light" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg class="route-map" viewBox="0 0 480 340" aria-hidden="true">
+          <path class="path" d="M20 300 C 120 320, 160 240, 130 190 S 60 90, 140 60 S 320 30, 340 90 S 420 150, 440 60"/>
+          <path class="path-active" d="M20 300 C 120 320, 160 240, 130 190 S 60 90, 140 60 S 320 30, 340 90 S 420 150, 440 60"/>
+          <circle class="stop" cx="20" cy="300" r="6"/>
+          <circle class="stop-ring" cx="20" cy="300" r="11"/>
+          <text class="label" x="34" y="304">ORIGEM</text>
+          <circle class="stop" cx="140" cy="60" r="5"/>
+          <text class="label" x="152" y="56">EM ROTA</text>
+          <circle class="stop" cx="340" cy="90" r="5"/>
+          <text class="label" x="352" y="86">EM ROTA</text>
+          <circle class="stop" cx="440" cy="60" r="7"/>
+          <circle class="stop-ring" cx="440" cy="60" r="12"/>
+          <text class="label label-hot" x="400" y="42">DESTINO</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="pillars">
+    <div class="wrap">
+      <div class="pillar">
+        <span class="num">01</span>
+        <div><h4>Segurança</h4><p>Carga acompanhada do início ao fim, em cada etapa do trajeto.</p></div>
+      </div>
+      <div class="pillar">
+        <span class="num">02</span>
+        <div><h4>Agilidade</h4><p>Resposta rápida para prazos urgentes ou operações programadas.</p></div>
+      </div>
+      <div class="pillar">
+        <span class="num">03</span>
+        <div><h4>Profissionalismo</h4><p>Comunicação clara e prazos cumpridos, do orçamento à entrega.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">O que fazemos</span>
+        <h2>Serviços feitos para cada tipo de frete</h2>
+        <p>De uma entrega urgente a uma operação recorrente, cada carga tem uma parada planejada no seu trajeto.</p>
+      </div>
+      <div class="route-col">
+        <div class="stop-line"></div>
+        <div class="service-list">
+          <div class="service-item">
+            <div class="stop-marker">01</div>
+            <div class="service-body">
+              <h3>Serviços urgentes <span class="service-tag">Sob demanda</span></h3>
+              <p>Coleta e entrega expressa para quando o prazo não pode esperar — resposta rápida do primeiro contato à chegada ao destino.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="stop-marker">02</div>
+            <div class="service-body">
+              <h3>Serviços programados <span class="service-tag">Data e hora fixas</span></h3>
+              <p>Rotas planejadas com data e horário definidos, ideais para operações recorrentes e fornecedores com fluxo constante.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="stop-marker">03</div>
+            <div class="service-body">
+              <h3>Transporte dedicado <span class="service-tag">Veículo exclusivo</span></h3>
+              <p>Veículo exclusivo para a sua carga, sem paradas ou compartilhamento de espaço com outras entregas.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="stop-marker">04</div>
+            <div class="service-body">
+              <h3>Atendimento personalizado <span class="service-tag">PJ e PF</span></h3>
+              <p>Atendimento sob medida para empresas e pessoas físicas, com contato direto e sem burocracia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="how" id="como-funciona">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">O trajeto do seu frete</span>
+        <h2>Como funciona, do pedido à entrega</h2>
+        <p>Quatro etapas simples — sem burocracia, com acompanhamento em cada uma delas.</p>
+      </div>
+    </div>
+    <div class="wrap" style="padding:0;">
+      <div class="steps">
+        <div class="step"><span class="step-num">Etapa 01</span><h4>Solicitação</h4><p>Envie os detalhes da carga pelo WhatsApp ou telefone.</p></div>
+        <div class="step"><span class="step-num">Etapa 02</span><h4>Cotação</h4><p>Receba um orçamento claro, sem letras miúdas.</p></div>
+        <div class="step"><span class="step-num">Etapa 03</span><h4>Coleta</h4><p>Retirada no endereço combinado, no horário definido.</p></div>
+        <div class="step"><span class="step-num">Etapa 04</span><h4>Entrega</h4><p>A carga chega ao destino com aviso de conclusão.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diff" id="diferenciais">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Por que a DeOlinda Express</span>
+        <h2>Cuidado com cada frete, do pequeno ao médio porte</h2>
+      </div>
+    </div>
+    <div class="wrap" style="padding:0;">
+      <div class="diff-grid">
+        <div class="diff-card">
+          <svg class="icon" viewBox="0 0 48 48" fill="none"><path d="M24 4 8 10v12c0 11 7 17.5 16 22 9-4.5 16-11 16-22V10L24 4Z" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Segurança</h3>
+          <p>Sua carga é tratada com o mesmo cuidado do início ao fim do trajeto, sem atalhos.</p>
+        </div>
+        <div class="diff-card">
+          <svg class="icon" viewBox="0 0 48 48" fill="none"><path d="M6 32h10l6-16h8l-4 12h10l-14 14v-10H10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Agilidade</h3>
+          <p>Rotas otimizadas e comunicação rápida, para fretes urgentes ou programados.</p>
+        </div>
+        <div class="diff-card">
+          <svg class="icon" viewBox="0 0 48 48" fill="none"><rect x="8" y="14" width="32" height="22" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 22h32M17 14v-4h14v4" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>Profissionalismo</h3>
+          <p>Prazos cumpridos e informações claras em cada etapa da negociação e do transporte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALIDADES -->
+  <section class="modes">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Modelos de contratação</span>
+        <h2>Frete avulso ou contrato mensal — você escolhe</h2>
+      </div>
+      <div class="modes-grid">
+        <div class="mode-card">
+          <span class="mode-tag">Sem compromisso fixo</span>
+          <h3>Frete avulso</h3>
+          <p>Para quem precisa transportar uma carga pontual, sem vínculo de longo prazo.</p>
+          <ul>
+            <li>Entregas únicas ou eventuais</li>
+            <li>Urgências e prazos apertados</li>
+            <li>Primeira experiência com a DeOlinda Express</li>
+          </ul>
+        </div>
+        <div class="mode-card">
+          <span class="mode-tag">Demanda recorrente</span>
+          <h3>Contrato mensal</h3>
+          <p>Para empresas com fluxo constante de cargas, com rotas e condições combinadas.</p>
+          <ul>
+            <li>Operações contínuas e fornecedores</li>
+            <li>E-commerces e lojas com envios frequentes</li>
+            <li>Condições e prazos negociados mensalmente</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COBERTURA -->
+  <section class="coverage">
+    <div class="wrap coverage-grid">
+      <div>
+        <span class="eyebrow">Alcance</span>
+        <h2>Do pequeno volume ao grande trajeto</h2>
+        <p>Atendemos rotas em todo o território nacional, conectando cargas pequenas e médias a qualquer distância com o mesmo padrão de cuidado.</p>
+      </div>
+      <svg class="dot-map" viewBox="0 0 400 260" aria-hidden="true">
+        <line class="link" x1="60" y1="210" x2="150" y2="140"/>
+        <line class="link" x1="150" y1="140" x2="230" y2="160"/>
+        <line class="link" x1="150" y1="140" x2="210" y2="70"/>
+        <line class="link" x1="210" y1="70" x2="300" y2="50"/>
+        <line class="link" x1="230" y1="160" x2="320" y2="190"/>
+        <line class="link" x1="210" y1="70" x2="270" y2="120"/>
+        <circle class="on" cx="60" cy="210" r="5"/>
+        <circle cx="150" cy="140" r="4"/>
+        <circle class="on" cx="230" cy="160" r="5"/>
+        <circle cx="210" cy="70" r="4"/>
+        <circle class="on" cx="300" cy="50" r="5"/>
+        <circle cx="320" cy="190" r="4"/>
+        <circle cx="270" cy="120" r="4"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="contato">
+    <div class="wrap">
+      <span class="eyebrow" style="justify-content:center;">Fale com a DeOlinda Express</span>
+      <h2>Pronto para colocar sua carga na rota certa?</h2>
+      <p>Envie os detalhes do seu frete e receba um orçamento claro, sem burocracia.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="https://wa.me/5511982871696?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20frete." target="_blank" rel="noopener">Solicitar pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+5511982871696">Ligar agora</a>
+      </div>
+      <div class="contact-details">
+        <span>WhatsApp: <a href="https://wa.me/5511982871696" target="_blank" rel="noopener">(11) 98287-1696</a></span>
+        <span>E-mail: <a href="mailto:geraldofmelofilho@gmail.com">geraldofmelofilho@gmail.com</a></span>
+        <span>Atendimento: seg. a sáb.</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <img class="footer-logo" src="assets/logo-footer.png" alt="DeOlinda Express" width="180" height="87">
+        <p style="margin-top:12px; font-size:13.5px; max-width:320px;">Transporte de cargas pequenas e médias para todo o território nacional.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> DeOlinda Express. Todos os direitos reservados.</span>
+      <span>Feito para transportar com segurança, agilidade e profissionalismo.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/5511982871696?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20frete." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.94.55 3.75 1.5 5.29L2 22l4.87-1.43A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.3 1.18-1.8 1.24-.46.06-1.03.08-1.66-.1-.38-.11-.87-.28-1.5-.55-2.63-1.14-4.35-3.8-4.48-3.98-.13-.18-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.53-.32.7-.32h.5c.16 0 .38-.06.6.46.22.53.75 1.82.82 1.95.07.13.11.29.02.47-.09.18-.14.29-.27.44-.13.15-.28.34-.4.46-.13.13-.27.27-.11.53.16.26.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.19 1.37.26.14.41.11.56-.07.16-.18.66-.77.84-1.03.18-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.11.06.65-.16 1.27z"/></svg>
+</a>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

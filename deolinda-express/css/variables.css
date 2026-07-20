@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Design tokens — DeOlinda Express
+   ========================================================================== */
+:root{
+  /* Color — sampled directly from the DeOlinda Express logo */
+  --ink:#001121;         /* logo navy */
+  --ink-soft:#0E2033;
+  --steel:#3C5066;
+  --steel-light:#718697;
+  --paper:#F6F4EF;
+  --paper-dim:#EDEAE1;
+  --route:#C6890A;       /* logo gold — buttons, fills, borders, text-on-dark */
+  --route-light:#DAB260; /* lighter gold tint — hover states, text on dark bg */
+  --route-deep:#8A5F08;  /* deeper gold — text/icons on light backgrounds (AA contrast) */
+  --brand-gray:#9D9C9C;  /* logo's third swoosh tone — subtle accents */
+  --line:#D9D4C7;
+  --line-dark:#23384C;
+  --white:#FFFFFF;
+
+  /* Type */
+  --display: 'Barlow Condensed', sans-serif;
+  --body: 'Inter', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+
+  /* Layout */
+  --maxw: 1180px;
+}

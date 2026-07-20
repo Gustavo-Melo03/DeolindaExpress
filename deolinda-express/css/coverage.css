@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Cobertura nacional
+   ========================================================================== */
+.coverage{background:var(--ink); color:var(--paper); overflow:hidden;}
+.coverage-grid{display:grid; grid-template-columns:1fr; gap:40px;}
+@media(min-width:900px){.coverage-grid{grid-template-columns:1fr 1fr; align-items:center;}}
+.coverage h2{color:var(--paper); font-size:clamp(28px,4vw,42px); text-transform:uppercase; margin:14px 0 18px;}
+.coverage p{color:#B6C1CC; font-size:16px; max-width:480px;}
+.coverage .eyebrow{color:var(--route-light);}
+.coverage .eyebrow::before{background:var(--route-light);}
+
+.dot-map{width:100%; height:auto;}
+.dot-map circle{fill:#25384C;}
+.dot-map circle.on{fill:var(--route-light);}
+.dot-map .link{stroke:#334A61; stroke-width:1; stroke-dasharray:3 5;}
