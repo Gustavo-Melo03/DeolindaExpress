@@ -16,9 +16,6 @@
 <meta property="og:image" content="assets/og-image.png">
 <meta property="og:type" content="website">
 
-<!-- Vercel Web Analytics -->
-<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -32,6 +29,7 @@
 <link rel="stylesheet" href="css/hero.css">
 <link rel="stylesheet" href="css/pillars.css">
 <link rel="stylesheet" href="css/services.css">
+<link rel="stylesheet" href="css/gallery.css">
 <link rel="stylesheet" href="css/how-it-works.css">
 <link rel="stylesheet" href="css/differentials.css">
 <link rel="stylesheet" href="css/modes.css">
@@ -156,6 +154,55 @@
       </div>
     </div>
   </section>
+
+
+  <!-- SERVIÇOS REALIZADOS -->
+  <section class="work-gallery" id="servicos-realizados">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Serviços realizados</span>
+        <h2>Experiência real em cada trajeto</h2>
+        <p>Registros reais de transportes, entregas dedicadas e rotas interestaduais realizadas pela DeOlinda Express.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-card gallery-card--tall reveal" type="button" data-gallery-image="assets/servicos-realizados/carga-cosmeticos.webp" data-gallery-alt="Veículo carregado com caixas de cosméticos">
+          <img src="assets/servicos-realizados/carga-cosmeticos.webp" alt="Veículo carregado com caixas de cosméticos" loading="lazy">
+          <span class="gallery-overlay"><strong>Transporte de mercadorias</strong><small>Carga organizada e protegida</small></span>
+        </button>
+
+        <button class="gallery-card gallery-card--wide reveal" type="button" data-gallery-image="assets/servicos-realizados/carga-volumosa.webp" data-gallery-alt="Veículo com reboque transportando carga volumosa">
+          <img src="assets/servicos-realizados/carga-volumosa.webp" alt="Veículo com reboque transportando carga volumosa" loading="lazy">
+          <span class="gallery-overlay"><strong>Cargas volumosas</strong><small>Transporte com reboque dedicado</small></span>
+        </button>
+
+        <button class="gallery-card reveal" type="button" data-gallery-image="assets/servicos-realizados/rota-bahia-minas.webp" data-gallery-alt="Registro de rota na divisa entre Minas Gerais e Bahia">
+          <img src="assets/servicos-realizados/rota-bahia-minas.webp" alt="Registro de rota na divisa entre Minas Gerais e Bahia" loading="lazy">
+          <span class="gallery-overlay"><strong>Rotas interestaduais</strong><small>Minas Gerais e Bahia</small></span>
+        </button>
+
+        <button class="gallery-card gallery-card--wide reveal" type="button" data-gallery-image="assets/servicos-realizados/entrega-porta-a-porta.webp" data-gallery-alt="Veículo de carga com reboque em atendimento urbano">
+          <img src="assets/servicos-realizados/entrega-porta-a-porta.webp" alt="Veículo de carga com reboque em atendimento urbano" loading="lazy">
+          <span class="gallery-overlay"><strong>Coleta e entrega</strong><small>Atendimento porta a porta</small></span>
+        </button>
+
+        <button class="gallery-card reveal" type="button" data-gallery-image="assets/servicos-realizados/rota-sao-paulo-minas.webp" data-gallery-alt="Placa indicando divisa entre São Paulo e Minas Gerais">
+          <img src="assets/servicos-realizados/rota-sao-paulo-minas.webp" alt="Placa indicando divisa entre São Paulo e Minas Gerais" loading="lazy">
+          <span class="gallery-overlay"><strong>Cobertura regional</strong><small>São Paulo e Minas Gerais</small></span>
+        </button>
+
+        <button class="gallery-card gallery-card--tall reveal" type="button" data-gallery-image="assets/servicos-realizados/veiculo-de-carga.webp" data-gallery-alt="Veículo utilizado nos transportes da DeOlinda Express">
+          <img src="assets/servicos-realizados/veiculo-de-carga.webp" alt="Veículo utilizado nos transportes da DeOlinda Express" loading="lazy">
+          <span class="gallery-overlay"><strong>Veículo preparado</strong><small>Estrutura para cargas pequenas e médias</small></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true" role="dialog" aria-label="Visualização ampliada da foto">
+    <button class="gallery-lightbox__close" type="button" aria-label="Fechar foto">×</button>
+    <img class="gallery-lightbox__image" src="" alt="">
+  </div>
 
   <!-- COMO FUNCIONA -->
   <section class="how" id="como-funciona">
