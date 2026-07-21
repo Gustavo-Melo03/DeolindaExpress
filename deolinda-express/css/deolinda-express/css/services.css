@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Services — presented as stops along a route
+   ========================================================================== */
+.services{background:var(--paper);}
+.route-col{position:relative;}
+
+.stop-line{
+  position:absolute; left:23px; top:14px; bottom:14px; width:2px;
+  background:repeating-linear-gradient(180deg, var(--line-dark) 0 8px, transparent 8px 16px);
+  display:none;
+}
+@media(min-width:720px){.stop-line{display:block;}}
+
+.service-list{display:flex; flex-direction:column; gap:2px;}
+.service-item{
+  display:grid; grid-template-columns:48px 1fr; gap:20px;
+  padding:30px 0;
+  border-bottom:1px solid var(--line);
+  position:relative;
+}
+.service-item:first-child{padding-top:6px;}
+
+.stop-marker{
+  width:48px; height:48px; border-radius:50%;
+  background:var(--ink); color:var(--route-light);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--mono); font-size:11px; letter-spacing:0.02em;
+  position:relative; z-index:1;
+  transition:background 0.3s ease, transform 0.3s ease;
+}
+.service-item:hover .stop-marker{background:var(--route); color:var(--ink); transform:scale(1.06);}
+
+.service-body h3{
+  font-size:24px; text-transform:uppercase; margin-bottom:8px;
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+}
+.service-tag{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em;
+  background:var(--paper-dim); color:var(--steel);
+  padding:3px 9px; border-radius:20px; text-transform:uppercase;
+  font-weight:600;
+}
+.service-body p{color:var(--steel); font-size:15.5px; max-width:560px;}
